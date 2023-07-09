@@ -27,7 +27,7 @@ nav ul{
 
 // header section 
 .header{
-  background-image: url('/images/main-img/image-header.jpg');
+  background-image: url('../images/main-img/image-header.jpg');
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -135,10 +135,10 @@ nav ul{
     }
   }
   .cherry{
-    background-image: url('/images/main-img/image-graphic-design.jpg');
+    background-image: url('../images/main-img/image-graphic-design.jpg');
   }
   .orange{
-    background-image: url('/images/main-img/image-photography.jpg');
+    background-image: url('../images/main-img/image-photography.jpg');
    
   }
 }
