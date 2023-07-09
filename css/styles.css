@@ -8,6 +8,11 @@ h1, h2, h3 {
   font-family: 'Fraunces', serif;
 }
 
+nav ul {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,6 +44,10 @@ h1, h2, h3 {
   padding: 4rem 6rem;
 }
 
+.header .nav .logo {
+  width: 20rem;
+}
+
 .header .nav .nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,14 +69,21 @@ h1, h2, h3 {
 }
 
 .header .nav .nav-list .main-btn:hover {
-  opacity: .7;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  opacity: .8;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .header .nav .nav-list .main-btn:active {
   position: relative;
   top: .1rem;
+}
+
+.header .nav .nav-list li:hover {
+  opacity: .8;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: black;
 }
 
 .header .header-text {
@@ -187,12 +203,27 @@ h1, h2, h3 {
   place-items: center;
 }
 
+.footer > div .footer-logo {
+  fill: #000000 !important;
+  width: 20rem;
+}
+
 .footer .footer-links {
   margin: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 5rem;
+}
+
+.footer .footer-links li {
+  color: #3f5d58;
+}
+
+.footer .footer-links li:hover {
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .footer .footer-icons {
@@ -202,4 +233,14 @@ h1, h2, h3 {
   gap: 4rem;
   margin-top: 6rem;
   margin-bottom: 2rem;
+}
+
+.footer .author {
+  color: #FED501;
+}
+
+.footer .author:hover {
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }

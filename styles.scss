@@ -9,6 +9,10 @@ body{
 h1,h2,h3{
   font-family: 'Fraunces', serif;
 }
+nav ul{
+  font-size: 2rem;
+  font-weight: 600;
+}
 // pre styling 
 .d-flex{
   display: flex;
@@ -28,6 +32,9 @@ h1,h2,h3{
       justify-content: space-between;
       align-items: center;
       padding: 4rem 6rem;
+      .logo{
+        width: 20rem;
+      }
       .nav-list{
         display: flex;
         gap: 2rem;
@@ -39,16 +46,22 @@ h1,h2,h3{
           border-radius: 10rem;
           color: black;
           &:hover{
-            opacity: .7;
-            transition: all 0.4s;
+            opacity: .8;
+            transition: all 0.3s;
           }
           &:active{
             position: relative;
             top: .1rem;
           }
         }
+        li:hover{
+          opacity: .8;
+          transition: all 0.5s;
+          color: black;
+        }
       }
     }
+    
     .header-text{
       display: grid;
       place-items: center;   
@@ -158,17 +171,36 @@ h1,h2,h3{
   &>div{    
     display: grid;
     place-items: center;
+    .footer-logo{
+      fill: #000000 !important;
+      width: 20rem;  
+    }
   }
+
   
   .footer-links{
     margin: 2rem 0;
     display: flex;
     gap: 5rem;
+    li{
+      color: #3f5d58;
+      &:hover{
+        color: white;
+        transition: all 0.3s;
+      }
+    }
   }
   .footer-icons{
     display: flex;
     gap: 4rem;
     margin-top: 6rem;
     margin-bottom: 2rem;
+  }
+  .author{
+    color: #FED501;
+    &:hover{
+      color: white;
+      transition: all 0.3s;
+    }
   }
 }
