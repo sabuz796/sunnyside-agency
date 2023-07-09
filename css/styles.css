@@ -8,6 +8,11 @@ h1, h2, h3 {
   font-family: 'Fraunces', serif;
 }
 
+i {
+  font-size: 3.2rem;
+  display: none;
+}
+
 nav ul {
   font-size: 2rem;
   font-weight: 600;
@@ -35,6 +40,8 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -243,4 +250,140 @@ nav ul {
   color: white;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.open {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+@media (max-width: 576px) {
+  .header .header-text h1 {
+    font-size: 3rem;
+  }
+  .header .nav .nav-list {
+    display: none;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .header .nav i {
+    display: block;
+    cursor: pointer;
+  }
+  .glass {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .glass .glass-text {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .egg {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .fruits {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .testimonial .testimonial-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .testimonial .testimonial-container div {
+    width: 100%;
+  }
+  .gallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .header .header-text h1 {
+    font-size: 4rem;
+  }
+  .header .nav .nav-list {
+    display: none;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .header .nav i {
+    display: block;
+    cursor: pointer;
+  }
+  .egg {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .egg .egg-text {
+    min-height: 40rem;
+  }
+  .egg .egg-text h2 {
+    font-size: 4rem;
+  }
+  .egg img {
+    width: 100%;
+  }
+  .glass {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .glass img {
+    width: 100%;
+  }
+  .glass .glass-text {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    min-height: 40rem;
+  }
+  .glass .glass-text h2 {
+    font-size: 3.5rem;
+  }
+  .fruits {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .testimonial .testimonial-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .testimonial .testimonial-container div {
+    width: 100%;
+  }
+  .gallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }

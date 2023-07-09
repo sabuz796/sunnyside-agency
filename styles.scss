@@ -9,6 +9,10 @@ body{
 h1,h2,h3{
   font-family: 'Fraunces', serif;
 }
+i{
+  font-size: 3.2rem;
+  display: none;
+}
 nav ul{
   font-size: 2rem;
   font-weight: 600;
@@ -20,6 +24,7 @@ nav ul{
 .f-width{
   width: 100%;
 }
+
 // header section 
 .header{
   background-image: url('/images/main-img/image-header.jpg');
@@ -29,6 +34,7 @@ nav ul{
   color: white;
     .nav{
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
       padding: 4rem 6rem;
@@ -155,7 +161,6 @@ nav ul{
         width: 25%;
         border-radius: 100rem;
         margin: 0 auto;
-        
       }
       p{
         margin: 2rem 0;
@@ -204,3 +209,138 @@ nav ul{
     }
   }
 }
+
+// nav menu responsive 
+.open{
+  display: flex !important;
+}
+
+// made responsive 
+
+// Small screens (e.g., smartphones)
+@media (max-width: 576px){
+  .header{
+    .header-text{
+      h1{
+        font-size: 3rem;
+      }
+    }
+    .nav{
+      .nav-list{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+      }
+      i{
+        display: block  ;
+        cursor: pointer;
+      }
+    }
+  }
+  // glass section
+  .glass{
+    flex-direction: column;
+    .glass-text{
+      order: -1;
+    }
+  }
+  // egg section 
+  .egg{
+    flex-direction: column;
+  }
+  // fruits section 
+  .fruits{
+    flex-direction: column;
+  }
+   // testimonial 
+   .testimonial{
+    .testimonial-container{
+      flex-direction: column;
+      & div{
+        width: 100%;
+      }
+    }
+  }
+  // gallery 
+  .gallery{
+    flex-direction: column;
+    
+  }
+}
+
+
+// Medium screens (e.g., landscape smartphones)
+@media (min-width: 577px) and (max-width: 768px){
+  // header section 
+  .header{
+    .header-text{
+      h1{
+        font-size: 4rem;
+      }
+    }
+    .nav{
+      .nav-list{
+        // margin-top: 3rem;
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        // align-items: flex-end;
+        text-align: center;
+      }
+      i{
+        display: block  ;
+        cursor: pointer;
+      }
+    }
+  }
+ // egg section 
+ .egg{
+  flex-direction: column;
+  .egg-text{
+    min-height: 40rem;
+    h2{
+      font-size: 4rem;
+    }
+  }
+  img{
+    width: 100%;
+  }
+}
+// glass
+.glass{
+  flex-direction: column;
+  img{
+    width: 100%;
+  }
+  .glass-text{
+    order: -1;
+    min-height: 40rem;
+    div{
+      // width: 70%;
+    }
+    h2{
+      font-size: 3.5rem;
+    }
+  }
+}
+// fruits section 
+.fruits{
+  flex-direction: column;
+}
+ // testimonial 
+ .testimonial{
+  .testimonial-container{
+    flex-direction: column;
+    & div{
+      width: 100%;
+    }
+  }
+}
+// gallery 
+.gallery{
+  flex-direction: column;
+}
+}
+
+
