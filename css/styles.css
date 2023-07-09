@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Fraunces:wght@400;500;600;700;800&display=swap");
+body {
+  font-size: 1.8rem;
+  font-family: 'Barlow', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Fraunces', serif;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.f-width {
+  width: 100%;
+}
+
+.header {
+  background-image: url("/images/main-img/image-header.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  color: white;
+}
+
+.header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4rem 6rem;
+}
+
+.header .nav .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .nav .nav-list .main-btn {
+  background-color: white;
+  padding: 1.6rem 4rem;
+  border-radius: 10rem;
+  color: black;
+}
+
+.header .nav .nav-list .main-btn:hover {
+  opacity: .7;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.header .nav .nav-list .main-btn:active {
+  position: relative;
+  top: .1rem;
+}
+
+.header .header-text {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: relative;
+  top: 8.5rem;
+}
+
+.header .header-text h1 {
+  font-size: 7rem;
+  text-transform: uppercase;
+}
+
+.egg .egg-text {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.egg .egg-text > div {
+  width: 70%;
+}
+
+.egg .egg-text h2 {
+  font-size: 5rem;
+}
+
+.egg p {
+  margin: 2rem 0;
+}
+
+.glass .glass-text {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.glass .glass-text div {
+  width: 70%;
+}
+
+.glass .glass-text h2 {
+  font-size: 5rem;
+}
+
+.glass p {
+  margin: 2rem 0;
+}
+
+.fruits .cherry, .fruits .orange {
+  height: 60rem;
+}
+
+.fruits .cherry div, .fruits .orange div {
+  width: 50%;
+  position: relative;
+  top: 80%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fruits .cherry div h2, .fruits .orange div h2 {
+  margin-bottom: 2rem;
+}
+
+.fruits .cherry {
+  background-image: url("/images/main-img/image-graphic-design.jpg");
+}
+
+.fruits .orange {
+  background-image: url("/images/main-img/image-photography.jpg");
+}
+
+.testimonial {
+  padding: 12rem 6rem;
+}
+
+.testimonial h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.testimonial .testimonial-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 8rem;
+}
+
+.testimonial .testimonial-container div {
+  width: 25%;
+  text-align: center;
+}
+
+.testimonial .testimonial-container div img {
+  width: 25%;
+  border-radius: 100rem;
+  margin: 0 auto;
+}
+
+.testimonial .testimonial-container div p {
+  margin: 2rem 0;
+}
+
+.footer {
+  padding: 6rem 0;
+  background-color: #68B1A2;
+}
+
+.footer > div {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.footer .footer-links {
+  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5rem;
+}
+
+.footer .footer-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4rem;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}

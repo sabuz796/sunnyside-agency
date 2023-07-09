@@ -1,0 +1,174 @@
+// imported font from google font 
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Fraunces:wght@400;500;600;700;800&display=swap');
+
+body{
+  font-size: 1.8rem;
+  font-family: 'Barlow', sans-serif;
+}
+h1,h2,h3{
+  font-family: 'Fraunces', serif;
+}
+// pre styling 
+.d-flex{
+  display: flex;
+}
+.f-width{
+  width: 100%;
+}
+// header section 
+.header{
+  background-image: url('/images/main-img/image-header.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  color: white;
+    .nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4rem 6rem;
+      .nav-list{
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        .main-btn{
+          background-color: white;
+          padding: 1.6rem 4rem;
+          border-radius: 10rem;
+          color: black;
+          &:hover{
+            opacity: .7;
+            transition: all 0.4s;
+          }
+          &:active{
+            position: relative;
+            top: .1rem;
+          }
+        }
+      }
+    }
+    .header-text{
+      display: grid;
+      place-items: center;   
+      position: relative;
+      top: 8.5rem;  
+      h1{
+        font-size: 7rem;
+        text-transform: uppercase;
+      }
+    }
+}
+
+// egg section 
+
+.egg{
+  .egg-text{
+    display: grid;
+    place-items: center;
+    &>div{
+      width: 70%;
+    }
+    h2{
+      font-size: 5rem;
+    }
+  }
+  p{
+    margin: 2rem 0;
+  }
+}
+
+// glass section 
+
+.glass{
+  .glass-text{
+    div{
+      width: 70%;
+    }
+    display: grid;
+    place-items: center;
+
+    h2{
+      font-size: 5rem;
+    }
+  }
+  p{
+    margin: 2rem 0;
+  }
+}
+
+// fruits section 
+
+.fruits{
+  .cherry,.orange{
+    height: 60rem;
+    div{
+      width: 50%;
+      position: relative;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      h2{
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  .cherry{
+    background-image: url('/images/main-img/image-graphic-design.jpg');
+  }
+  .orange{
+    background-image: url('/images/main-img/image-photography.jpg');
+   
+  }
+}
+
+// testimonial section 
+
+.testimonial{
+  padding: 12rem 6rem;
+  h2{
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .testimonial-container{
+    justify-content: center;
+    gap: 8rem;
+    div{
+      width:25%;
+      text-align: center;
+      img{
+        width: 25%;
+        border-radius: 100rem;
+        margin: 0 auto;
+        
+      }
+      p{
+        margin: 2rem 0;
+      }
+    }
+  }
+}
+
+
+.footer{
+  padding: 6rem 0;
+  background-color: #68B1A2;
+  &>div{    
+    display: grid;
+    place-items: center;
+  }
+  
+  .footer-links{
+    margin: 2rem 0;
+    display: flex;
+    gap: 5rem;
+  }
+  .footer-icons{
+    display: flex;
+    gap: 4rem;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+  }
+}
