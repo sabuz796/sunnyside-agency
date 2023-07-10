@@ -18,6 +18,43 @@ nav ul {
   font-weight: 600;
 }
 
+.egg-btn, .glass-btn {
+  position: absolute;
+  text-transform: uppercase;
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.egg-btn::before, .glass-btn::before {
+  content: "";
+  display: inline-block;
+  width: 14rem;
+  height: 1.1rem;
+  z-index: -1;
+  border-radius: 10rem;
+  position: absolute;
+  top: 1.7rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.egg-btn::before {
+  background-color: rgba(250, 212, 0, 0.404);
+}
+
+.egg-btn:hover::before {
+  background: #FAD400;
+}
+
+.glass-btn::before {
+  background-color: rgba(254, 120, 103, 0.493);
+}
+
+.glass-btn:hover::before {
+  background-color: #FE7867;
+}
+
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -285,12 +322,16 @@ nav ul {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
+    padding: 10rem 0;
   }
   .egg {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .egg .egg-text {
+    padding: 10rem 0;
   }
   .fruits {
     -webkit-box-orient: vertical;
